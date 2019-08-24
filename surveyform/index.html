@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <div id="container-form">
+    <p id="description">
+      Let us know how we can improve freeCodeCamp
+    </p>
+    <form action="" id="survey-form">
+
+      <div class="row-tab">
+        <div class="labels">
+          <label for="name" id="name-label">Name</label>
+        </div>
+        <div class="content">
+          <input autofocus type="text" id="name" class="input-field" name="name" placeholder="Enter your Name" required>
+        </div>
+      </div>
+
+      <div class="row-tab">
+        <div class="labels">
+          <label for="email" id="email-label">Email</label>
+        </div>
+        <div class="content">
+          <input type="email" id=email class="input-field" placeholder="Enter your Email" required>
+        </div>
+      </div>
+
+      <div class="row-tab">
+        <div class="labels">
+          <label for="number" id="number-label">Age</label>
+        </div>
+        <div class="content">
+          <input type="number" id="number" class="input-field" min="0" max="100" placeholder="Age" reuired>
+        </div>
+      </div>
+
+      <div class="row-tab">
+        <div class="labels">
+          <label for="dropdown">
+            Which option best describes your current role?
+          </label>
+        </div>
+        <div class="content">
+          <select name="dropdown" id="dropdown" class="dropdown">
+            <option value="student">Student</option>
+            <option value="engineer">Engineer</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row-tab">
+        <div class="labels">
+          <label for="radio">
+            How likely is that you would recommend freeCodeCamp to a friend?
+          </label>
+        </div>
+        <div class="content">
+          <ul>
+            <li class="radio">
+              <label for="radio-button">
+                <input type="radio" name="radio-button" value="0"> Definetly
+              </label>
+            </li>
+            <li class="radio">
+              <label for="radio-button">
+                <input type="radio" name="radio-button" value="1"> Maybe
+              </label>
+            </li>
+            <li class="radio">
+              <label for="radio-button">
+                <input type="radio" name="radio-button" value="2"> Not Sure
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row-tab">
+        <div class="labels">
+          <label for="checkbox">Things that should be improved in the future</label>
+        </div>
+        <div class="content">
+          <ul>
+            <li class="checkbox">
+              <label for="checkbox-button">
+                <input type="checkbox" value="0" name="checkbox-button"> Front-end Projects
+              </label>
+            </li>
+            <li class="checkbox">
+              <label for="checkbox-button">
+                <input type="checkbox" value="0" name="checkbox-button"> Back-end Projects
+              </label>
+            </li>
+            <li class="checkbox">
+              <label for="checkbox-button">
+                <input type="checkbox" value="0" name="checkbox-button"> Data Visualization
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row-tab">
+        <div class="labels">
+          <label for="textarea">Any comments or suggestions?</label>
+        </div>
+        <div class="content">
+          <textarea name="comments" class="input-field" placeholder="Enter your comments here..."></textarea>
+        </div>
+      </div>
+      <button id="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
